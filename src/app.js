@@ -1,0 +1,11 @@
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req,res) => {
+    res.send('Welcome to Black Ticket')
+})
+
+app.listen(port, () => {
+    console.log('Black Ticket app is started and listening on port 3000')
+})
