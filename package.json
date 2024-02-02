@@ -4,12 +4,16 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start-local": "cross-env NODE_ENV=local node src/app.js",
+    "start-dev": "cross-env NODE_ENV=dev node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sangeevan",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.11",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.1",
     "express": "^4.18.2"
   }
 }
