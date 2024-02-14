@@ -1,0 +1,24 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "BlackTicket API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001"
+    }
+  ],
+  "paths": {
+    "/api/users/all-users": {
+      "get": {
+        "summary": "Get all BlackTicket users",
+        "responses": {
+          "200": {
+            "description": "All Black Ticket users"
+          }
+        }
+      }
+    }
+  }
+}
